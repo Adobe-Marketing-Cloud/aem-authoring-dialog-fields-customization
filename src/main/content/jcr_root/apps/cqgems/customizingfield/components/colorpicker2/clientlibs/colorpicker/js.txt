@@ -1,0 +1,4 @@
+#base=js
+
+../bgrins-spectrum-61ad86c/spectrum.js
+colorpicker.js

@@ -1,0 +1,5 @@
+#base=css
+
+../bgrins-spectrum-61ad86c/spectrum.css
+../bgrins-spectrum-61ad86c/themes/sp-dark.css
+colorpicker.css

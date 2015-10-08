@@ -1,0 +1,4 @@
+#base=css
+
+colorpicker.css
+../jQuery-ColorPicker-1.0.2/css/colorpicker.css

@@ -1,0 +1,30 @@
+/*
+  ADOBE CONFIDENTIAL
+
+  Copyright 2015 Adobe Systems Incorporated
+  All Rights Reserved.
+
+  NOTICE:  All information contained herein is, and remains
+  the property of Adobe Systems Incorporated and its suppliers,
+  if any.  The intellectual and technical concepts contained
+  herein are proprietary to Adobe Systems Incorporated and its
+  suppliers and may be covered by U.S. and Foreign Patents,
+  patents in process, and are protected by trade secret or copyright law.
+  Dissemination of this information or reproduction of this material
+  is strictly forbidden unless prior written permission is obtained
+  from Adobe Systems Incorporated.
+*/
+
+.coral-Form--aligned .sp-container.sp-flat {
+    float: left;
+    margin: 0 0 0.9375rem;
+}
+
+.coral-Form--aligned .coral-Form-fieldwrapper .sp-container.sp-flat {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.sp-container.sp-flat {
+    z-index: auto;
+}
