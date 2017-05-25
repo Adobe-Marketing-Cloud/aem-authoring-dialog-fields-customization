@@ -41,8 +41,8 @@
 
     // Check the validity of HEX format
     var hexRegex = /^#[0-9A-F]{6}$/i;
-    
-    $.validator.register({
+
+    $(window).adaptTo("foundation-registry").register("foundation.validation.validator", {
         selector: ".granite-example-colorpicker",
         validate: function(el) {
             if (!el.val()) {
@@ -54,4 +54,5 @@
             }
         }
     });
+
 })(Granite.$, Granite);

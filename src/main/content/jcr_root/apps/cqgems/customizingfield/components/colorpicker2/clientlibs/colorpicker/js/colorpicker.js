@@ -16,6 +16,18 @@
 */
 (function($, Granite) {
     "use strict";
+
+    var FIELD_ERROR_KEY = ".granite-example-colorpicker2.internal.field.error";
+
+    // Check the validity of HEX format
+    var hexRegex = /^#[0-9A-F]{6}$/i;
+
+    var fieldErrorEl = $(document.createElement("span"))
+        .addClass("coral-Form-fielderror coral-Icon coral-Icon--alert coral-Icon--sizeS")
+        .attr({
+            "data-init": "quicktip",
+            "data-quicktip-type": "error"
+        });
     
     $(document).on("foundation-contentloaded", function(e) {
         $(".granite-example-colorpicker2", e.target).spectrum({
@@ -40,20 +52,8 @@
             }
         });
     });
-    
 
-    // Check the validity of HEX format
-    var hexRegex = /^#[0-9A-F]{6}$/i;
-    
-    var fieldErrorEl = $(document.createElement("span"))
-        .addClass("coral-Form-fielderror coral-Icon coral-Icon--alert coral-Icon--sizeS")
-        .attr({
-            "data-init": "quicktip",
-            "data-quicktip-type": "error"
-        });
-    var FIELD_ERROR_KEY = ".granite-example-colorpicker2.internal.field.error";
-    
-    $.validator.register({
+    $(window).adaptTo("foundation-registry").register("foundation.validation.validator", {
         selector: ".granite-example-colorpicker2",
         validate: function(el) {
             if (!el.val()) {
@@ -113,4 +113,5 @@
               field.nextAll(".coral-Form-fieldinfo").removeClass("u-coral-screenReaderOnly");
           }
     });
+
 })(Granite.$, Granite);

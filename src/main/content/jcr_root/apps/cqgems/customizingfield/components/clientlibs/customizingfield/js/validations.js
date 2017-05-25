@@ -24,21 +24,22 @@
             parseInt(hex[5] + hex[6], 16)
         ];
     }
-    
-    $.validator.register({
+
+    $(window).adaptTo("foundation-registry").register("foundation.validation.validator", {
         selector: "[data-validation~='cqgems.customizingfield.color.grayscale']",
         validate: function(el) {
             var value = el.val();
-            
+
             if (!value) {
                 return;
             }
-            
+
             var rgb = hexToRgb(value);
-            
+
             if (rgb[0] !== rgb[1] || rgb[1] !== rgb[2]) {
                 return Granite.I18n.get("The color needs to be grayscale, where R, G, B components have the same values.");
             }
         }
     });
+
 })(Granite.$, Granite);

@@ -1,6 +1,6 @@
-# Adobe Experience Manager 6.1: Dialog fields customization
+# Adobe Experience Manager 6.3: Dialog fields customization
 
-This is a sample package showing how to customize Touch UI Dialog Fiels in AEM 6.1. For more information on that topic, you can refer to the CQ Gems page at http://dev.day.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html.
+This is a sample package showing how to customize Touch UI Dialog Fiels in AEM 6.3. For more information on that topic, you can refer to the CQ Gems page at http://dev.day.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html.
 
 ## Building 
  
